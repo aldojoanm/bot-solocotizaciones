@@ -1,20 +1,21 @@
 {
-  "name": "bot-solocotizaciones",
+  "name": "messenger-bot",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "start": "node tg-polling.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
+    "googleapis": "^157.0.0",
+    "multer": "^1.4.5-lts.2",
     "pdfkit": "^0.17.2",
     "telegraf": "^4.16.3"
   },
   "engines": {
-    "node": ">=18.17 <23"
+    "node": ">=18.17"
   }
 }
